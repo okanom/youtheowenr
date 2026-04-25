@@ -147,6 +147,42 @@ body::before {
     font-weight: 300;
     color: var(--accent-neon);
     letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+/* ナビゲーション */
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.nav-link {
+    color: var(--accent-neon);
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent-neon);
+    border-radius: 0;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    background: rgba(0, 217, 255, 0.2);
+    box-shadow: 0 0 15px var(--accent-neon);
+    transform: scale(1.05);
+}
+
+.nav-link.active {
+    background: var(--accent-neon);
+    color: var(--darker-bg);
+    box-shadow: 0 0 20px var(--accent-neon);
 }
 
 /* ========================================
